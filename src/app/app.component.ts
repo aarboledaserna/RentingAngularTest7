@@ -1,17 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  styleUrls: './app.component.html',
-  imports: [CommonModule, RouterModule]
+  standalone: true,
+  templateUrl: './app.component.html',
+  imports: [RouterOutlet]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = '¡Bienvenido(a)!';
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {
-  }
+  
 }

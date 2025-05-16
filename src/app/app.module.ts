@@ -6,13 +6,13 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+   
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
     CommonModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
